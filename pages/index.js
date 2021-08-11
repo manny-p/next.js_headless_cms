@@ -87,7 +87,7 @@ export default function HomePage() {
                 <link rel="icon" href={'/favicon.ico'}/>
             </Head>
 
-            <Grid
+            <Grid className="main-container"
                 h="100vh"
                 templateRows="repeat(1, 1fr)"
                 templateColumns="repeat(5, 1fr)"
