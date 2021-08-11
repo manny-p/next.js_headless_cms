@@ -1,37 +1,3 @@
-html {
-    /*position: fixed;*/
-    /*overflow: hidden;*/
-    /*height: 100%;*/
-    /*overscroll-behavior: none;*/
-}
-
-body {
-    /*width: 100vw;*/
-    /*height: 100vh;*/
-    /*overflow-y: auto;*/
-    /*overflow-x: hidden;*/
-    /*-webkit-overflow-scrolling: touch;*/
-    /*overflow: auto;*/
-    /*height: 100%;*/
-    /*width: 100%;*/
-}
-
-html,
-body {
-    position: fixed;
-    overflow: auto;
-    overscroll-behavior: none;
-    -webkit-overflow-scrolling: touch;
-    padding: 0;
-    margin: 0;
-    font-family: Roboto, sans-serif;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -56,4 +22,33 @@ a {
     border-radius: 10px;
     background-color: #d51d1d;
     outline: 100vh solid black;
+}
+
+
+html {
+    position: fixed;
+    overflow: hidden;
+    height: 100%;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
