@@ -26,18 +26,18 @@
 
 
 html {
-    position: fixed;
-    overflow: hidden;
     height: 100%;
 }
 
 body {
     width: 100vw;
     height: 100vh;
+
 }
 
 html,
 body {
+    overflow: hidden;
     overscroll-behavior: none;
     padding: 0;
     margin: 0;
@@ -45,16 +45,16 @@ body {
 }
 
 .main-container {
-    /*position: fixed;*/
-    /*top: 0;*/
-    /*left: 0;*/
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    min-height: 100vh;
-    overflow-y: auto;
+    /*overscroll-behavior: contain;*/
     overflow-x: hidden;
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 }
 
