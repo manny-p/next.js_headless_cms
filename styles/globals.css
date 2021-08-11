@@ -1,18 +1,16 @@
 html {
-    position: fixed;
-    overflow: hidden;
-    height: 100%;
-    overscroll-behavior: none;
+    /*position: fixed;*/
+    /*overflow: hidden;*/
+    /*height: 100%;*/
+    /*overscroll-behavior: none;*/
 }
 
 body {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-
-    overflow-y: auto;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
+    /*width: 100vw;*/
+    /*height: 100vh;*/
+    /*overflow-y: auto;*/
+    /*overflow-x: hidden;*/
+    /*-webkit-overflow-scrolling: touch;*/
     /*overflow: auto;*/
     /*height: 100%;*/
     /*width: 100%;*/
@@ -20,6 +18,10 @@ body {
 
 html,
 body {
+    /*position: fixed;*/
+    /*overflow: auto;*/
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
     padding: 0;
     margin: 0;
     font-family: Roboto, sans-serif;
