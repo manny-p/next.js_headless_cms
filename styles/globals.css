@@ -19,7 +19,7 @@ body {
 html,
 body {
     /*position: fixed;*/
-    /*overflow: auto;*/
+    overflow: auto;
     overscroll-behavior: none;
     -webkit-overflow-scrolling: touch;
     padding: 0;
