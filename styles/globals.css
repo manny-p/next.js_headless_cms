@@ -19,7 +19,7 @@ html,
 body {
     padding: 0;
     margin: 0;
-    /*overscroll-behavior: none;*/
+    overscroll-behavior: none;
     font-family: Roboto, sans-serif;
 }
 
