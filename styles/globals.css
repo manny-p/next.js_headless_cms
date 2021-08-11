@@ -18,7 +18,7 @@ body {
 
 html,
 body {
-    /*position: fixed;*/
+    position: fixed;
     overflow: auto;
     overscroll-behavior: none;
     -webkit-overflow-scrolling: touch;
