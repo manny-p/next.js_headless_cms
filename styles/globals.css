@@ -9,7 +9,6 @@ body {
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
     /*overflow: auto;*/
     /*height: 100%;*/
     /*width: 100%;*/
@@ -19,7 +18,8 @@ html,
 body {
     padding: 0;
     margin: 0;
-    overscroll-behavior: none;
+    overscroll-behavior-y: none;
+    -webkit-overflow-scrolling: touch;
     font-family: Roboto, sans-serif;
 }
 
