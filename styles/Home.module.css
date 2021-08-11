@@ -5,26 +5,26 @@
     font-weight: bold;
     padding-left: 10vw;
     overflow: hidden;
-    margin-top: 1vh;
+    margin-top: 5vh;
 }
 
-.bg {
+.background {
     background: red;
     position: absolute;
     bottom: 0;
     display: inline-block;
-    height: 1vw;
-    padding-top: 10vh;
+    height: 1vh;
+    padding-top: 15vh;
 }
 
 .hi {
     display: inline-block;
-    /*margin-right: 1vw;*/
+    margin-left: .25vw;
 }
 
 .words {
     font-weight: normal;
-    padding-left: 1.2vw;
+    padding-left: .5vw;
 }
 
 .cursor {
@@ -47,6 +47,9 @@
     }
 }
 
+.main {
+    color: white;
+}
 
 /*@keyframes fadeIn {*/
 /*  0% {*/
