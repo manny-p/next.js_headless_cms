@@ -2,7 +2,6 @@ html {
     overflow: hidden;
     height: 100%;
     position: fixed;
-    overscroll-behavior: none;
 }
 
 body {
@@ -20,6 +19,7 @@ html,
 body {
     padding: 0;
     margin: 0;
+    overscroll-behavior: none;
     font-family: Roboto, sans-serif;
 }
 
