@@ -2,13 +2,14 @@ html {
     position: fixed;
     overflow: hidden;
     height: 100%;
+    overscroll-behavior: none;
 }
 
 body {
     position: relative;
     width: 100vw;
     height: 100vh;
-    overscroll-behavior: none;
+
     overflow-y: auto;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
