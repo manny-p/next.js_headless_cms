@@ -9,6 +9,7 @@ body {
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
     /*overflow: auto;*/
     /*height: 100%;*/
     /*width: 100%;*/
