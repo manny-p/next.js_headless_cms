@@ -48,7 +48,11 @@
 }
 
 .main {
-    color: white;
+    color: black;
+}
+
+.footer {
+    color: black
 }
 
 /*@keyframes fadeIn {*/
