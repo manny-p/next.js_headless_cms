@@ -8,7 +8,7 @@
     margin-top: 5vh;
 }
 
-.background {
+.bgBox {
     background: red;
     position: absolute;
     bottom: 0;
@@ -54,15 +54,3 @@
 .footer {
     color: black
 }
-
-/*@keyframes fadeIn {*/
-/*  0% {*/
-/*    visibility: hidden;*/
-/*    opacity: 0;*/
-/*  }*/
-/*  100% {*/
-/*    visibility: visible;*/
-/*    opacity: 1;*/
-/*    transition: all 2s linear;*/
-/*  }*/
-/*}*/
