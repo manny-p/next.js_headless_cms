@@ -1,7 +1,11 @@
 .footer {
-    justify-content: center;
+    text-align: center;
+    color: white;
     position: absolute;
     bottom: 0;
     width: 100vw;
-    color: white;
+}
+
+.footer p {
+    margin: .5rem 0;
 }

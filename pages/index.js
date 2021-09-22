@@ -3,15 +3,13 @@ import {useEffect} from 'react'
 import {useAppContext} from '../src/context/state'
 
 import Layout from '@/components/Layout'
-import Header from '@/components/Header'
-import SectionA from '@/components/SectionA'
-import SectionB from '@/components/SectionB'
+import Showcase from '@/components/Showcase'
+import Content from '@/components/Content'
 
 const {gsap} = require('gsap/dist/gsap')
 const {RoughEase} = require('gsap/dist/EasePack')
 const {TextPlugin} = require('gsap/dist/TextPlugin')
 gsap.registerPlugin(TextPlugin, RoughEase)
-
 
 export default function HomePage() {
 
@@ -89,9 +87,7 @@ export default function HomePage() {
     return (
         <>
             <Layout>
-                <Header/>
-                <SectionA/>
-                <SectionB/>
+                <Content/>
             </Layout>
         </>
     )

@@ -1,51 +1,50 @@
 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    min-height: 5vh;
+    padding: 0 2rem;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
     justify-content: center;
+    list-style: none;
 }
 
-.h1 {
-    position: relative;
-    color: white;
-    font-size: 6vw;
-    font-weight: bold;
-    overflow: hidden;
-    margin-top: 5vh;
+.header ul li {
+    padding: 1rem;
 }
 
-.bgBox {
-    background: red;
-    position: absolute;
-    bottom: 0;
-    display: inline-block;
-    height: 1vh;
-    padding-top: 15vh;
+.logo {
+    font-size: 1.25rem;
+    text-transform: uppercase;
 }
 
-.hi {
-    display: inline-block;
-    margin-left: .25vw;
+.logo a {
+    color: red;
 }
 
-.words {
-    font-weight: normal;
-    padding-left: .5vw;
-}
-
-.cursor {
-    color: white;
-    font-weight: normal;
-    animation-name: slideIn;
-    animation-duration: 5s;
-    animation-timing-function: ease-in;
-}
-
-@keyframes slideIn {
-    0% {
-        opacity: 0;
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
     }
-    50% {
-        opacity: 1;
+
+    .header ul {
+        margin: .5rem 0;
+        flex-direction: column;
+        text-align: center;
     }
-    100% {
-        opacity: 1;
+
+    .header a {
+        margin-right: 0;
+    }
+
+    .logo {
+        margin: 1rem 0;
     }
 }

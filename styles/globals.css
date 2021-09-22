@@ -4,7 +4,7 @@ body {
     padding: 0;
     overscroll-behavior: none;
     font-family: Roboto, sans-serif;
-    -webkit-overflow-scrolling: touch;
+    /*-webkit-overflow-scrolling: touch;*/
 }
 
 a {
@@ -38,3 +38,4 @@ a {
 ::-webkit-scrollbar-corner {
     background: black;
 }
+

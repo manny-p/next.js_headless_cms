@@ -1,12 +1,13 @@
 import Head from 'next/head'
+import {useRouter} from 'next/router'
 import styles from '@/styles/Layout.module.css'
-
-import {Flex, Grid, GridItem} from '@chakra-ui/react'
-
-import Navbar from '@/components/Navbar'
+import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import Showcase from '@/components/Showcase';
 
 export default function Layout({title, description, keywords, children}) {
+
+    const router = useRouter()
 
     return (
         <>
@@ -16,13 +17,19 @@ export default function Layout({title, description, keywords, children}) {
                 <meta name="keywords" content={keywords}/>
                 <link rel="icon" href={'/favicon.ico'}/>
             </Head>
-            <body className={styles.container}>
-            <Navbar/>
-            <main className={styles.main}>
-                {children}
-            </main>
-            <Footer/>
-            </body>
+
+            <div className={styles.layoutWrapper}>
+
+                <Header/>
+
+                {router.pathname === '/' && <Showcase/>}
+
+                <div className={styles.contentWrapper}>
+                    {children}
+                </div>
+
+                <Footer/>
+            </div>
         </>
     )
 }
