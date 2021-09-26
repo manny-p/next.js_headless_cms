@@ -7,16 +7,15 @@ export default function Header() {
             <header className={styles.header}>
                 <div className={styles.logo}>
                     <Link href='/'>
-                    <a>Logo</a>
+                    <a/>
                     </Link>
                 </div>
                 <nav>
                     <ul>
                         <li>
-                            About
+
                         </li>
                         <li>
-                            Projects
                         </li>
                     </ul>
                 </nav>

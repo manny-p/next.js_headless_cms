@@ -41,3 +41,8 @@ a {
     background: black;
 }
 
+@media (max-width: 768px) {
+    *::-webkit-scrollbar {
+        width: 1rem;
+    }
+}

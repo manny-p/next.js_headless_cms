@@ -1,23 +1,22 @@
-import {useEffect} from 'react'
-
-import {useAppContext} from '../src/context/state'
-
+import {useContext, useEffect} from 'react'
+import {AppContext} from '../src/context/state'
 import Layout from '@/components/Layout'
-import Showcase from '@/components/Showcase'
 import Section from '@/components/Section'
 
 const {gsap} = require('gsap/dist/gsap')
 const {RoughEase} = require('gsap/dist/EasePack')
 const {TextPlugin} = require('gsap/dist/TextPlugin')
+
 gsap.registerPlugin(TextPlugin, RoughEase)
 
 export default function HomePage() {
 
-    const {bgBoxRef} = useAppContext()
-    const {hiRef} = useAppContext()
-    const {wordsRef} = useAppContext()
-    const {cursorRef} = useAppContext()
-    const {words} = useAppContext()
+    const {bgBoxRef} = useContext(AppContext)
+    const {hiRef} = useContext(AppContext)
+    const {wordsRef} = useContext(AppContext)
+    const {cursorRef} = useContext(AppContext)
+    const {words} = useContext(AppContext)
+
 
     useEffect(() => {
 

@@ -1,13 +1,13 @@
-import {Box, Flex} from '@chakra-ui/react'
 import styles from '@/styles/Showcase.module.css'
-import {useAppContext} from '../context/state'
+import {AppContext} from '../context/state'
+import {useContext} from 'react';
 
 export default function Showcase() {
 
-    const {bgBoxRef} = useAppContext()
-    const {hiRef} = useAppContext()
-    const {wordsRef} = useAppContext()
-    const {cursorRef} = useAppContext()
+    const {bgBoxRef} = useContext(AppContext)
+    const {hiRef} = useContext(AppContext)
+    const {wordsRef} = useContext(AppContext)
+    const {cursorRef} = useContext(AppContext)
 
     return (
         <div className={styles.showcaseWrapper}>

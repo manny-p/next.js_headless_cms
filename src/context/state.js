@@ -1,8 +1,12 @@
 import {createContext, useContext, useRef} from 'react';
 
-const AppContext = createContext(null);
+export const AppContext = createContext(null);
 
 export function AppWrapper({children}) {
+
+    let blobRef1 = useRef(null)
+    let blobRef2 = useRef(null)
+
     let bgBoxRef = useRef(null)
     let hiRef = useRef(null)
     let cursorRef = useRef(null)
@@ -10,6 +14,8 @@ export function AppWrapper({children}) {
     const words = [' Manny', ' a Developer', ' a Creative', ' a Veteran', ' Manny']
 
     let sharedState = {
+        blobRef1,
+        blobRef2,
         bgBoxRef,
         hiRef,
         cursorRef,
@@ -19,11 +25,8 @@ export function AppWrapper({children}) {
 
     return (
         <AppContext.Provider value={sharedState}>
-        {children}
+            {children}
         </AppContext.Provider>
     )
 }
 
-export function useAppContext() {
-    return useContext(AppContext)
-}
