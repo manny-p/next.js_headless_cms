@@ -23,7 +23,7 @@ export default function Blob() {
                 yoyo: true,
             });
 
-    }, [blobRef1, blobRef2])
+    })
 
 
     return (

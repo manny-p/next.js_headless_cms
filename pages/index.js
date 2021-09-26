@@ -81,7 +81,7 @@ export default function HomePage() {
             onComplete: () => wordsTimeline.kill()
         })
 
-    }, [bgBoxRef, hiRef, wordsRef, cursorRef, words])
+    })
 
     return (
         <>
