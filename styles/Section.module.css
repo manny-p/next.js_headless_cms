@@ -1,0 +1,21 @@
+.sectionWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.layer1 {
+    background-image: url('../src/svg/layer1.svg');
+}
+
+.layer2 {
+    background-image: url('../src/svg/layer2.svg');
+}

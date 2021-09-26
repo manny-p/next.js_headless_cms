@@ -11,7 +11,7 @@
 .bgBox {
     display: inline-block;
     position: absolute;
-    background: red;
+    background: hsl(269, 69%, 46%);
     bottom: 0;
     padding-top: 16vh;
 
@@ -44,5 +44,11 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .words {
+        padding-left: 1.25vw;
     }
 }

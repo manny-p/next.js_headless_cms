@@ -4,7 +4,7 @@ import {useAppContext} from '../src/context/state'
 
 import Layout from '@/components/Layout'
 import Showcase from '@/components/Showcase'
-import Content from '@/components/Content'
+import Section from '@/components/Section'
 
 const {gsap} = require('gsap/dist/gsap')
 const {RoughEase} = require('gsap/dist/EasePack')
@@ -87,7 +87,7 @@ export default function HomePage() {
     return (
         <>
             <Layout>
-                <Content/>
+                <Section/>
             </Layout>
         </>
     )

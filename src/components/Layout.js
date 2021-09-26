@@ -24,7 +24,7 @@ export default function Layout({title, description, keywords, children}) {
 
                 {router.pathname === '/' && <Showcase/>}
 
-                <div className={styles.contentWrapper}>
+                <div>
                     {children}
                 </div>
 
