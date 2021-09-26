@@ -18,11 +18,11 @@ export default function Blob() {
 
         svgTimeline
             .to(blobRef1.current, {
-                duration: 3,
+                duration: 4,
                 morphSVG: {
                     shape: blobRef2.current,
                     type: 'rotational',
-                    shapeIndex: 3,
+                    shapeIndex: 1,
                 },
                 repeat: -1,
                 yoyo: true,
