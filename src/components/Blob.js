@@ -28,7 +28,6 @@ export default function Blob() {
 
     return (
         <div className={styles.blobWrapper}>
-            &nbsp;
             <svg
                 id="visual"
                 viewBox="0 0 960 300"

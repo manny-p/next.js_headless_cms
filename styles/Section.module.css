@@ -1,4 +1,4 @@
-.spacer {
+.spacer * {
     aspect-ratio: 960/300;
     width: 100%;
     background-repeat: no-repeat;

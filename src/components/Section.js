@@ -4,16 +4,15 @@ import Blob from '@/components/Blob';
 export default function Section() {
 
     return (
-        <section>
-            <div className={`${styles.spacer} ${styles.layer1}`}>
-                &nbsp;
+        <section className={styles.spacer}>
+            <div className={styles.layer1}>
+
             </div>
-            <div className={`${styles.spacer} ${styles.layer2}`}>
-                &nbsp;
+            <div className={styles.layer2}>
+
             </div>
             <Blob/>
-            <div className={`${styles.spacer} ${styles.layer3}`}>
-                &nbsp;
+            <div className={styles.layer3}>
 
             </div>
         </section>
