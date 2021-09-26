@@ -6,7 +6,6 @@ export function AppWrapper({children}) {
 
     let blobRef1 = useRef(null)
     let blobRef2 = useRef(null)
-
     let bgBoxRef = useRef(null)
     let hiRef = useRef(null)
     let cursorRef = useRef(null)

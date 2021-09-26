@@ -1,6 +1,6 @@
-import styles from '@/styles/Showcase.module.css'
 import {AppContext} from '../context/state'
 import {useContext} from 'react';
+import styles from '@/styles/Showcase.module.css'
 
 export default function Showcase() {
 
