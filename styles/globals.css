@@ -5,7 +5,9 @@ body {
     height: 100%;
     font-family: Roboto, sans-serif;
     overflow-x: hidden;
-    overscroll-behavior: none;
+    overscroll-behavior-y: none;
+    /*overscroll-behavior: none;*/
+
     /*position: fixed;*/
 
     /*overscroll-behavior-block: contain;*/
