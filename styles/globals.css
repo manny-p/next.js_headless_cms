@@ -1,21 +1,11 @@
-/*html {*/
-/*    overflow: hidden;*/
-/*}*/
-
-/*body {*/
-/*    overflow: auto;*/
-
-/*}*/
-
 html,
 body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overscroll-behavior: none;
     font-family: Roboto, sans-serif;
     overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
+    /*-webkit-overflow-scrolling: touch;*/
 }
 
 a {
@@ -25,6 +15,8 @@ a {
 
 * {
     box-sizing: border-box;
+    /*overscroll-behavior: none;*/
+    overscroll-behavior-y: none;
 }
 
 *::-webkit-scrollbar {
