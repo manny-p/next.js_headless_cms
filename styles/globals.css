@@ -1,23 +1,27 @@
 html {
     background-color: black;
+    overflow: hidden;
+    height: 100%;
 }
 
 body {
     background-color: black;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
 }
 
 html,
 body {
     margin: 0;
     padding: 0;
-    height: 100%;
     font-family: Roboto, sans-serif;
-    overflow-x: hidden;
     overscroll-behavior-y: none;
+    /*height: 100%;*/
+    /*overflow-x: hidden;*/
+
     /*overscroll-behavior: none;*/
-
     /*position: fixed;*/
-
     /*overscroll-behavior-block: contain;*/
 }
 
