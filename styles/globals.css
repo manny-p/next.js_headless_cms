@@ -34,7 +34,7 @@ a {
     border: .1rem solid black;
     border-radius: 1rem;
     background-color: hsl(173, 77%, 44%);
-    outline: 100vh solid #290754;
+    outline: 100vh solid hsl(266, 85%, 18%);
 }
 
 ::-webkit-scrollbar-corner {
