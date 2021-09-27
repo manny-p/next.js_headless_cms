@@ -15,8 +15,7 @@ a {
 
 * {
     box-sizing: border-box;
-    /*overscroll-behavior: none;*/
-    overscroll-behavior-y: none;
+    overscroll-behavior: none;
 }
 
 *::-webkit-scrollbar {
