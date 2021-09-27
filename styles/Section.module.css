@@ -1,50 +1,6 @@
 .sectionWrapper * {
     aspect-ratio: 960/300;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: black;
-
-
-}
-
-.layer1 {
-    background-image: url('../src/svg/layer1.svg');
-
-
-}
-
-.layer2 {
-    background-image: url('../src/svg/layer2.svg');
-
-}
-
-
-.blobWrapper {
-    margin-top: 10vh;
+    width: 100vw;
     display: flex;
-    position: relative;
-    z-index: 1;
-}
-
-.blobSVG {
-    position: absolute;
-    z-index: 2;
-}
-
-.layer3 {
-    background-image: url('../src/svg/layer3.svg');
-    margin-top: 2vh;
-}
-
-
-@media (max-width: 768px) {
-    .blobWrapper {
-        margin-top: -1vh;
-    }
-
-    .layer3 {
-        margin-top: 12vh;
-    }
+    flex-direction: column;
 }

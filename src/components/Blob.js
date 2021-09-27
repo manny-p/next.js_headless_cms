@@ -1,13 +1,12 @@
 import {useContext, useEffect} from 'react'
 import {AppContext} from '../context/state'
-import styles from '@/styles/Section.module.css'
+import styles from '@/styles/Blob.module.css'
 
 const {gsap} = require('gsap/dist/gsap')
 const {MorphSVGPlugin} = require('gsap/dist/MorphSVGPlugin')
 gsap.registerPlugin(MorphSVGPlugin)
 
-MorphSVGPlugin.defaultType = 'rotational'
-
+// MorphSVGPlugin.defaultType = 'rotational'
 
 export default function Blob() {
     const {blobRef1} = useContext(AppContext)
@@ -19,19 +18,20 @@ export default function Blob() {
         svgTimeline
             .to(blobRef1.current, {
                 duration: 4,
+                yoyo: true,
+                repeat: -1,
                 morphSVG: {
                     shape: blobRef2.current,
                     type: 'rotational',
                     shapeIndex: 1,
                 },
-                repeat: -1,
-                yoyo: true,
+                ease: 'slow (0.5, 0.7, false)',
             });
-    })
+    }, [blobRef1, blobRef2])
 
     return (
-        <div className={styles.blobWrapper}>
-            <svg className={styles.blobSVG}
+        <div className={styles.svgWrapper}>
+            <svg className={styles.svgBlob}
                  id="visual"
                  viewBox="0 0 960 300"
                  width="960"

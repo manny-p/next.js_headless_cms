@@ -1,0 +1,18 @@
+.svgWrapper {
+    display: flex;
+    margin-top: 3vh;
+}
+
+.svgBlob {
+    margin-top: 7vh;
+}
+
+@media (max-width: 768px) {
+    .svgWrapper {
+        margin-top: -3vh;
+    }
+
+    .svgBlob {
+        margin-top: 3vh;
+    }
+}

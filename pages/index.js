@@ -1,7 +1,7 @@
 import {useContext, useEffect} from 'react'
-import {AppContext} from '../src/context/state'
 import Layout from '@/components/Layout'
 import Section from '@/components/Section'
+import {AppContext} from '../src/context/state';
 
 const {gsap} = require('gsap/dist/gsap')
 const {RoughEase} = require('gsap/dist/EasePack')
