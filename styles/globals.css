@@ -5,7 +5,8 @@ body {
     height: 100%;
     font-family: Roboto, sans-serif;
     overflow-x: hidden;
-    /*-webkit-overflow-scrolling: touch;*/
+    overscroll-behavior: none;
+    overscroll-behavior-block: contain;
 }
 
 a {
@@ -15,7 +16,6 @@ a {
 
 * {
     box-sizing: border-box;
-    overscroll-behavior: none;
 }
 
 *::-webkit-scrollbar {
@@ -34,7 +34,7 @@ a {
     border: .1rem solid black;
     border-radius: 1rem;
     background-color: hsl(173, 77%, 44%);
-    outline: 100vh solid black;
+    outline: 100vh solid #290754;
 }
 
 ::-webkit-scrollbar-corner {

@@ -32,7 +32,6 @@
         flex-direction: column;
         height: auto;
     }
-
     .header ul {
         /*margin: .25rem 0;*/
         /*flex-direction: column;*/
@@ -48,3 +47,5 @@
         margin: .75rem 0;
     }
 }
+
+

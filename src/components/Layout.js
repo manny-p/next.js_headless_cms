@@ -17,7 +17,6 @@ export default function Layout({title, description, keywords, children}) {
                 <meta name="keywords" content={keywords}/>
                 <link rel="icon" href={'/favicon.ico'}/>
             </Head>
-
             <div className={styles.layoutWrapper}>
                 <Header/>
                 {router.pathname === '/' && <Showcase/>}

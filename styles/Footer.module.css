@@ -8,4 +8,12 @@
 
 .footer p {
     margin: 1vh 0;
+    font-size: .75rem;
+}
+
+@media (max-width: 768px) {
+    .footer p {
+        font-size: .5rem;
+    }
+
 }
