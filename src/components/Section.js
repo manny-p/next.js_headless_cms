@@ -36,6 +36,7 @@ export default function Section() {
                     alt={'layout'}
                 />
             </div>
+            <div/>
         </section>
     )
 }
