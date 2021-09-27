@@ -1,7 +1,3 @@
-html {
-    background-color: black;
-}
-
 html,
 body {
     margin: 0;
@@ -10,6 +6,7 @@ body {
     font-family: Roboto, sans-serif;
     overflow-x: hidden;
     overscroll-behavior-y: none;
+    background: black;
     /*overscroll-behavior: none;*/
 
     /*position: fixed;*/
