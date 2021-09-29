@@ -69,8 +69,4 @@ and (-webkit-min-device-pixel-ratio: 3) {
     .hi {
         display: inline-block;
     }
-
-    .words {
-        padding-left: .9vw;
-    }
 }
