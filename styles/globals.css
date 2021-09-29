@@ -1,13 +1,13 @@
 html {
-    background-color: black;
     overflow: hidden;
     overscroll-behavior: none;
 }
 
 body {
-    background-color: black;
+
     overflow-y: auto;
     overflow-x: hidden;
+    position: fixed;
 }
 
 html,
@@ -15,12 +15,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: Roboto, sans-serif;
-    /*overscroll-behavior-y: none;*/
     height: 100%;
+    background: black;
+    /*overscroll-behavior-y: none;*/
     /*overflow-x: hidden;*/
 
     /*overscroll-behavior: none;*/
-    /*position: fixed;*/
     /*overscroll-behavior-block: contain;*/
 }
 
@@ -31,7 +31,6 @@ a {
 
 * {
     box-sizing: border-box;
-    background-color: black;
 }
 
 *::-webkit-scrollbar {
