@@ -61,7 +61,16 @@
 and (min-device-width: 375px)
 and (max-device-width: 812px)
 and (-webkit-min-device-pixel-ratio: 3) {
-    /*.bgBox {*/
-    /*    padding-right: 18vw;*/
-    /*}*/
+
+    .showcaseWrapper {
+        font-size: 5.6vw;
+    }
+
+    .hi {
+        display: inline-block;
+    }
+
+    .words {
+        padding-left: .75vw;
+    }
 }
