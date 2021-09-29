@@ -46,14 +46,6 @@
     }
 }
 
-@media (max-width: 768px) {
-
-    .words {
-        padding-left: 1.25vw;
-    }
-}
-
-
 /* ----------- iPhone X ----------- */
 
 /* Portrait and Landscape */
@@ -65,8 +57,11 @@ and (-webkit-min-device-pixel-ratio: 3) {
     .showcaseWrapper {
         font-size: 5.6vw;
     }
+}
 
-    .hi {
-        display: inline-block;
+@media (max-width: 768px) {
+
+    .words {
+        padding-left: 1.25vw;
     }
 }
