@@ -1,11 +1,12 @@
 .showcaseWrapper {
     position: relative;
     color: white;
-    font-size: 5.9vw;
+    font-size: 5.85vw;
     font-weight: bold;
     padding-left: 30vw;
     margin-top: 5vh;
     overflow: hidden;
+
 }
 
 .bgBox {
@@ -18,12 +19,12 @@
 
 .hi {
     display: inline-block;
-    margin-left: .25vw;
+    margin-left: .3vw;
 }
 
 .words {
     font-weight: normal;
-    padding-left: 1vw;
+    padding-left: 1.1vw;
 }
 
 .cursor {
@@ -48,20 +49,48 @@
 
 /* ----------- iPhone X ----------- */
 
-/* Portrait and Landscape */
+
+/* Portrait */
 @media only screen
 and (min-device-width: 375px)
 and (max-device-width: 812px)
-and (-webkit-min-device-pixel-ratio: 3) {
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait) {
 
     .showcaseWrapper {
-        font-size: 5.6vw;
+        font-size: 5.5vw;
     }
-}
 
-@media (max-width: 768px) {
+    .hi {
+        display: inline-block;
+        margin-left: .35vw;
+    }
 
     .words {
         padding-left: 1.25vw;
     }
+
+}
+
+
+/* Landscape */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: landscape) {
+
+    .showcaseWrapper {
+        font-size: 5.7vw;
+    }
+
+    .hi {
+        display: inline-block;
+        margin-left: .5vw;
+    }
+
+    .words {
+        padding-left: 1.35vw;
+    }
+
 }
