@@ -1,10 +1,10 @@
-.showcaseWrapper {
+.heroWrapper {
     position: relative;
     color: white;
     font-size: 5.85vw;
     font-weight: bold;
     padding-left: 30vw;
-    margin-top: 5vh;
+    margin-top: 6vh;
     overflow: hidden;
 
 }

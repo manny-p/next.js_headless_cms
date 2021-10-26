@@ -3,7 +3,7 @@ import {useRouter} from 'next/router'
 import styles from '@/styles/Layout.module.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import Showcase from '@/components/Showcase';
+import Hero from '@/components/Hero';
 
 export default function Layout({title, description, keywords, children}) {
 
@@ -19,7 +19,7 @@ export default function Layout({title, description, keywords, children}) {
             </Head>
             <div className={styles.layoutWrapper}>
                 <Header/>
-                {router.pathname === '/' && <Showcase/>}
+                {router.pathname === '/' && <Hero/>}
                 <div>
                     {children}
                 </div>
@@ -33,48 +33,4 @@ Layout.defaultProps = {
     title: 'Manny Parra',
     description: 'Manny Parra | UI/UX Engineer',
     keywords: 'Software Engineer, UX Engineer, UI Engineer, Manny Parra, Green Beret, Special Forces'
-}
-
-{/*<div className={styles.container}>*/
-}
-{/*<Grid*/
-}
-{/*    h="100vh"*/
-}
-{/*    templateRows="repeat(1, 1fr)"*/
-}
-{/*    templateColumns="repeat(5, 1fr)"*/
-}
-
-{/*>*/
-}
-{/*<GridItem colSpan={1} bg="black">*/
-}
-
-{/*</GridItem>*/
-}
-{/*<GridItem rowSpan={2}>*/
-}
-{/*<Navbar/>*/
-}
-{/*</GridItem>*/
-}
-
-{/*<GridItem colSpan={5} bg="black">*/
-}
-{/*    <div className={`page-wrapper ${className}`}>*/
-}
-{/*        {children}*/
-}
-{/*    </div>*/
-}
-{/*</GridItem>*/
-}
-{/*<Footer/>*/
-}
-
-{/*</Grid>*/
-}
-
-{/*</div>*/
 }

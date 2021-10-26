@@ -1,9 +1,9 @@
 import {AppContext} from '../context/state'
 import {useContext} from 'react';
-import styles from '@/styles/Showcase.module.css'
-import {Flex} from '@chakra-ui/react';
+import styles from '@/styles/Hero.module.css'
+;
 
-export default function Showcase() {
+export default function Hero() {
 
     const {bgBoxRef} = useContext(AppContext)
     const {hiRef} = useContext(AppContext)
@@ -11,7 +11,7 @@ export default function Showcase() {
     const {cursorRef} = useContext(AppContext)
 
     return (
-        <div className={styles.showcaseWrapper}>
+        <div className={styles.heroWrapper}>
                 <span ref={bgBoxRef} className={styles.bgBox}/>
                 <span ref={hiRef} className={styles.hi}>Hi, I'm</span>
             <span ref={wordsRef} className={styles.words}/>
