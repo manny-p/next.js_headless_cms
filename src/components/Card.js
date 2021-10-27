@@ -1,6 +1,5 @@
 const Card = () => {
 
-
     const div = {
         background: 'white',
         fontSize: '2rem',

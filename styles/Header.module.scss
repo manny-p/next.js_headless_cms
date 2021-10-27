@@ -27,7 +27,6 @@
 
           span {
             font-weight: bold;
-            //color: rgb(24,199,177);
           }
         }
       }
@@ -46,6 +45,11 @@
         li {
           padding: 0 .5rem;
         }
+
+        li:last-child {
+          color: rgb(24, 199, 177);
+        }
+
       }
     }
 
