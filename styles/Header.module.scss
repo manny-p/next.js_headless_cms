@@ -3,7 +3,6 @@
   min-height: 5vh;
   padding: 0 2rem;
   height: auto;
-  font-size: 1.1rem;
 
   .nav {
     padding: .5rem 1rem;
@@ -13,6 +12,7 @@
 
     li {
       list-style: none;
+      font-size: 1.25rem;
     }
 
     .navGridLeft {
@@ -23,10 +23,11 @@
         display: flex;
 
         li {
-          padding: 0 .1rem;
+          padding: 0 .25rem;
+
           span {
-            font-size: 1.3rem;
             font-weight: bold;
+            //color: rgb(24,199,177);
           }
         }
       }
@@ -56,10 +57,14 @@
 //media queries
 @media (max-width: 768px) {
   .header {
-    font-size: .75rem;
     padding: 0 .2rem;
 
+    .nav ul > * {
+      font-size: 1rem;
+    }
+
     #m, #p {
+      color: blue;
       font-size: 1rem;
     }
   }

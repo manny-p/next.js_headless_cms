@@ -28,7 +28,7 @@ export default function Header() {
                     <div className={styles.navGridRight}>
                         <ul>
                             <li>
-                                <Link href="https://github.com/manny-p?tab=repositories">
+                                <Link href="https://github.com/manny-p">
                                 <a>Github</a>
                                 </Link>
                             </li>
