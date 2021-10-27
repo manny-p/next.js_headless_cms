@@ -1,17 +1,17 @@
 import Layout from '@/components/Layout';
+import Card from '@/components/Card';
 
 export default function RenderBlog() {
 
-    let style = {
-        font: 'white',
-        fontSize: '2rem',
-        paddingLeft: '3rem'
-    }
 
     return (
         <>
-            <Layout>
-                <li style={style}>Blog (WIP)</li>
+            <Layout
+                title="Blog"
+                description="Manny Parra UI/UX Engineer Blog"
+            >
+                {/*<li style={style}>Blog (WIP)</li>*/}
+                <Card/>
             </Layout>
         </>
     )
