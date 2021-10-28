@@ -26,10 +26,19 @@
         li {
           padding: 0 1.5rem;
 
-          span {
-            font-weight: bold;
+          // logo
+
+          a > * {
+            height: 1.25rem;
           }
+
         }
+
+        #logo {
+          //height: 1rem;
+          //display: none;
+        }
+
       }
     }
 
@@ -45,8 +54,7 @@
         align-items: center;
 
         li {
-          padding: 0rem 1.5rem;
-          //padding-right: 5rem;
+          padding: 0 1.5rem;
         }
 
         .blogButton {
@@ -74,9 +82,11 @@
       font-size: .75rem;
     }
 
-    #m, #p {
-      font-size: .75rem;
+    #logo {
+      height: .75rem;
+      //display: none;
     }
+
   }
 }
 

@@ -1,6 +1,8 @@
 import styles from '@/styles/Header.module.scss'
 import Link from 'next/link'
 import {Button} from '@chakra-ui/react';
+import {faCode} from '@fortawesome/free-solid-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 export default function Header() {
     // noinspection JSUnresolvedVariable,HtmlUnknownTarget
@@ -9,34 +11,28 @@ export default function Header() {
             <header className={styles.header}>
                 <nav className={styles.nav}>
                     <div className={styles.navGridLeft}>
-                        <Link href="/">
-                            <a>
-                                <ul className={styles.logo}>
-
-                                    <li>
-                                        <Link href="https://github.com/manny-p">
-                                            <a>Github</a>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="https://www.linkedin.com/in/mannyparra/">
-                                            <a>LinkedIn</a>
-                                        </Link>
-                                    </li>
-
-                                    {/*<li>*/}
-                                        {/*<span id={styles.m}>M</span>*/}
-                                        {/*anny*/}
-
-                                    {/*</li>*/}
-                                    {/*<li>*/}
-                                        {/*<span id={styles.p}>P</span>*/}
-                                        {/*arra*/}
-                                    {/*</li>*/}
-
-                                </ul>
-                            </a>
-                        </Link>
+                        <ul>
+                            <li>
+                                <Link href="/">
+                                    <a>
+                                        <FontAwesomeIcon
+                                            icon={faCode}
+                                            id={styles.logo}
+                                        />
+                                    </a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="https://github.com/manny-p">
+                                    <a>Github</a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="https://www.linkedin.com/in/mannyparra/">
+                                    <a>LinkedIn</a>
+                                </Link>
+                            </li>
+                        </ul>
                     </div>
                     <div className={styles.navGridRight}>
                         <ul>
@@ -63,4 +59,23 @@ export default function Header() {
             </header>
         </>
     )
+}
+
+{/*<li>*/
+}
+{/*    <span id={styles.m}>M</span>*/
+}
+
+{/*anny*/
+}
+
+{/*</li>*/
+}
+{/*<li>*/
+}
+{/*<span id={styles.p}>P</span>*/
+}
+{/*arra*/
+}
+{/*</li>*/
 }
