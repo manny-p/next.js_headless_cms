@@ -36,12 +36,13 @@ export default function Header() {
                     </div>
                     <div className={styles.navGridRight}>
                         <ul>
-
                             <li>
                                 {/*<Button colorScheme="blue">*/}
                                 <Button
+                                    className={styles.blogButton}
                                     bg="#18c7b1"
                                     color="black"
+                                    size='sm'
                                     // bgGradient="linear(to-r, #18c7b1, #5b0ead)"
                                     _hover={{
                                         bg: 'white',

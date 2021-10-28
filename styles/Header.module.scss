@@ -76,15 +76,20 @@
 //media queries
 @media (max-width: 768px) {
   .header {
-    padding: 0 .2rem;
 
-    .nav ul > * {
-      font-size: .75rem;
+    padding: 1rem 0 0 0;
+
+    .nav ul li > * {
+      font-size: .8rem;
     }
 
     #logo {
-      height: .75rem;
-      //display: none;
+      height: .8rem;
+    }
+
+    .blogButton {
+      height: 1.75rem;
+      width: 3rem;
     }
 
   }
