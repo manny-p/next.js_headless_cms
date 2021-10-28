@@ -1,7 +1,6 @@
 import {AppContext} from '../context/state'
-import {useContext} from 'react';
+import {useContext} from 'react'
 import styles from '@/styles/Hero.module.scss'
-    ;
 
 export default function Hero() {
 

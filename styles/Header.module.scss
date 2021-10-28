@@ -1,7 +1,7 @@
 .header {
   color: white;
   min-height: 5vh;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
   height: auto;
 
   .nav {
@@ -21,9 +21,10 @@
 
       ul {
         display: flex;
+        align-items: center;
 
         li {
-          padding: 0 .25rem;
+          padding: 0 1.5rem;
 
           span {
             font-weight: bold;
@@ -41,13 +42,19 @@
       ul {
         display: flex;
         justify-content: flex-end;
+        align-items: center;
 
         li {
-          padding: 0 .5rem;
+          padding: 0rem 1.5rem;
+          //padding-right: 5rem;
+        }
+
+        .blogButton {
+
         }
 
         li:last-child {
-          color: rgb(24, 199, 177);
+          //font-weight: bold;
         }
 
       }
