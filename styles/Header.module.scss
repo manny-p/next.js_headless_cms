@@ -1,7 +1,7 @@
 .header {
   color: white;
   min-height: 5vh;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
   height: auto;
 
   .nav {
@@ -21,15 +21,24 @@
 
       ul {
         display: flex;
+        align-items: center;
 
         li {
-          padding: 0 .25rem;
+          padding: 0 1.5rem;
 
-          span {
-            font-weight: bold;
-            //color: rgb(24,199,177);
+          // logo
+
+          a > * {
+            height: 1.25rem;
           }
+
         }
+
+        #logo {
+          //height: 1rem;
+          //display: none;
+        }
+
       }
     }
 
@@ -42,10 +51,20 @@
       ul {
         display: flex;
         justify-content: flex-end;
+        align-items: center;
 
         li {
-          padding: 0 .5rem;
+          padding: 0 1.5rem;
         }
+
+        .blogButton {
+
+        }
+
+        li:last-child {
+          //font-weight: bold;
+        }
+
       }
     }
 
@@ -57,15 +76,22 @@
 //media queries
 @media (max-width: 768px) {
   .header {
-    padding: 0 .2rem;
 
-    .nav ul > * {
-      font-size: .75rem;
+    padding: 1rem 0 0 0;
+
+    .nav ul li > * {
+      font-size: .8rem;
     }
 
-    #m, #p {
-      font-size: .75rem;
+    #logo {
+      height: .8rem;
     }
+
+    .blogButton {
+      height: 1.75rem;
+      width: 3rem;
+    }
+
   }
 }
 

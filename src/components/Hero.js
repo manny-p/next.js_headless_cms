@@ -1,7 +1,6 @@
 import {AppContext} from '../context/state'
-import {useContext} from 'react';
-import styles from '@/styles/Hero.module.css'
-;
+import {useContext} from 'react'
+import styles from '@/styles/Hero.module.scss'
 
 export default function Hero() {
 
@@ -12,8 +11,8 @@ export default function Hero() {
 
     return (
         <div className={styles.heroWrapper}>
-                <span ref={bgBoxRef} className={styles.bgBox}/>
-                <span ref={hiRef} className={styles.hi}>Hi, I'm</span>
+            <span ref={bgBoxRef} className={styles.bgBox}/>
+            <span ref={hiRef} className={styles.hi}>Hi, I'm</span>
             <span ref={wordsRef} className={styles.words}/>
             <span ref={cursorRef} className={styles.cursor}>_</span>
         </div>
