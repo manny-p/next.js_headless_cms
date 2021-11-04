@@ -26,18 +26,12 @@
         li {
           padding: 0 1.5rem;
 
-          // logo
-
-          a > * {
+          .logoClass {
             height: 1.25rem;
           }
 
         }
 
-        #logo {
-          //height: 1rem;
-          //display: none;
-        }
 
       }
     }
@@ -79,12 +73,12 @@
 
     padding: 1rem 0 0 0;
 
-    .nav ul li > * {
-      font-size: .8rem;
+    #logoID {
+      height: .8rem
     }
 
-    #logo {
-      height: .8rem;
+    .nav ul li > * {
+      font-size: .8rem;
     }
 
     .blogButton {

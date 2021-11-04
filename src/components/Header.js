@@ -14,22 +14,17 @@ export default function Header() {
                         <ul>
                             <li>
                                 <Link href="/">
-                                    <a>
-                                        <FontAwesomeIcon
-                                            icon={faCode}
-                                            id={styles.logo}
-                                        />
-                                    </a>
+                                    <FontAwesomeIcon icon={faCode} id={styles.logoID} className={styles.logoClass}/>
                                 </Link>
                             </li>
                             <li>
                                 <Link href="https://github.com/manny-p">
-                                    <a>Github</a>
+                                    Github
                                 </Link>
                             </li>
                             <li>
                                 <Link href="https://www.linkedin.com/in/mannyparra/">
-                                    <a>LinkedIn</a>
+                                    LinkedIn
                                 </Link>
                             </li>
                         </ul>
@@ -37,12 +32,11 @@ export default function Header() {
                     <div className={styles.navGridRight}>
                         <ul>
                             <li>
-                                {/*<Button colorScheme="blue">*/}
                                 <Button
                                     className={styles.blogButton}
                                     bg="#18c7b1"
                                     color="black"
-                                    size='sm'
+                                    size="sm"
                                     // bgGradient="linear(to-r, #18c7b1, #5b0ead)"
                                     _hover={{
                                         bg: 'white',
@@ -50,7 +44,7 @@ export default function Header() {
                                     }}
                                 >
                                     <Link href="/blog">
-                                        <a>Blog</a>
+                                        Blog
                                     </Link>
                                 </Button>
                             </li>
