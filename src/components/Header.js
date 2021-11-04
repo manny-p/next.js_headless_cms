@@ -22,17 +22,17 @@ export default function Header() {
                                 </li>
                             </Link>
 
-                            <Link href="https://github.com/manny-p">
+                            <a target="_blank" href="https://github.com/manny-p">
                                 <li>
                                     Github
                                 </li>
-                            </Link>
+                            </a>
 
-                            <Link href="https://www.linkedin.com/in/mannyparra/">
+                            <a target="_blank" href="https://www.linkedin.com/in/mannyparra/">
                                 <li>
                                     LinkedIn
                                 </li>
-                            </Link>
+                            </a>
 
                         </ul>
                     </div>
