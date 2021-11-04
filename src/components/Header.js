@@ -16,7 +16,7 @@ export default function Header() {
                 <nav className={styles.nav}>
                     <div className={styles.navGridLeft}>
                         <ul>
-                            <Link href="/" passHref>
+                            <Link href="/">
                                 <FontAwesomeIcon icon={faCode} className={styles.logoClass} id={styles.logoId}/>
                             </Link>
 
