@@ -32,7 +32,9 @@
         }
 
         .logoClass {
+          padding: 0 1.5rem;
           height: 1.25rem;
+          cursor: crosshair;
         }
       }
     }
@@ -72,11 +74,12 @@
       height: .8rem
     }
 
-    .nav ul li > * {
+    .nav ul a > * {
       font-size: .8rem;
     }
 
     .blogButton {
+      font-size: .8rem;
       height: 1.75rem;
       width: 3rem;
     }
