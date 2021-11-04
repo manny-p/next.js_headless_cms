@@ -4,11 +4,13 @@
   padding: 1rem 2rem;
   height: auto;
 
+
   .nav {
     padding: .5rem 1rem;
     display: grid;
     grid-template-areas:
   'left right';
+
 
     li {
       list-style: none;
@@ -19,24 +21,22 @@
       grid-area: left;
       align-self: center;
 
+
       ul {
         display: flex;
         align-items: center;
 
         li {
           padding: 0 1.5rem;
-
-          .logoClass {
-            height: 1.25rem;
-          }
-
+          cursor: crosshair;
         }
 
-
+        .logoClass {
+          height: 1.25rem;
+        }
       }
     }
 
-    //navGridLeft end
 
     .navGridRight {
       grid-area: right;
@@ -52,19 +52,14 @@
         }
 
         .blogButton {
-
-        }
-
-        li:last-child {
-          //font-weight: bold;
+          cursor: crosshair;
         }
 
       }
     }
 
-    //navGridRight end
-
   }
+
 }
 
 //media queries
@@ -73,7 +68,7 @@
 
     padding: 1rem 0 0 0;
 
-    #logoID {
+    #logoId {
       height: .8rem
     }
 

@@ -1,52 +1,60 @@
 import styles from '@/styles/Header.module.scss'
 import Link from 'next/link'
-import {Button} from '@chakra-ui/react';
+import {Button} from '@chakra-ui/react'
+// import {useRouter} from 'next/router';
+
 import {faCode} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 export default function Header() {
-    // noinspection JSUnresolvedVariable,HtmlUnknownTarget
+
+    // const router = useRouter();
+
     return (
         <>
             <header className={styles.header}>
                 <nav className={styles.nav}>
                     <div className={styles.navGridLeft}>
                         <ul>
-                            <li>
-                                <Link href="/">
-                                    <FontAwesomeIcon icon={faCode} id={styles.logoID} className={styles.logoClass}/>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="https://github.com/manny-p">
+                            <Link href="/">
+                                <li>
+                                    <FontAwesomeIcon icon={faCode} className={styles.logoClass} id={styles.logoId}/>
+                                </li>
+                            </Link>
+
+                            <Link href="https://github.com/manny-p">
+                                <li>
                                     Github
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="https://www.linkedin.com/in/mannyparra/">
+                                </li>
+                            </Link>
+
+                            <Link href="https://www.linkedin.com/in/mannyparra/">
+                                <li>
                                     LinkedIn
-                                </Link>
-                            </li>
+                                </li>
+                            </Link>
+
                         </ul>
                     </div>
                     <div className={styles.navGridRight}>
                         <ul>
                             <li>
-                                <Button
-                                    className={styles.blogButton}
-                                    bg="#18c7b1"
-                                    color="black"
-                                    size="sm"
-                                    // bgGradient="linear(to-r, #18c7b1, #5b0ead)"
-                                    _hover={{
-                                        bg: 'white',
-                                        color: '#5b0ead',
-                                    }}
-                                >
-                                    <Link href="/blog">
+                                <Link href="/blog">
+                                    <Button
+                                        className={styles.blogButton}
+                                        bg="#18c7b1"
+                                        color="black"
+                                        size="sm"
+                                        // bgGradient="linear(to-r, #18c7b1, #5b0ead)"
+                                        _hover={{
+                                            bg: 'white',
+                                            color: '#5b0ead',
+                                        }}
+                                    >
+
                                         Blog
-                                    </Link>
-                                </Button>
+                                    </Button>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -54,23 +62,4 @@ export default function Header() {
             </header>
         </>
     )
-}
-
-{/*<li>*/
-}
-{/*    <span id={styles.m}>M</span>*/
-}
-
-{/*anny*/
-}
-
-{/*</li>*/
-}
-{/*<li>*/
-}
-{/*<span id={styles.p}>P</span>*/
-}
-{/*arra*/
-}
-{/*</li>*/
 }
