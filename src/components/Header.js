@@ -16,9 +16,11 @@ export default function Header() {
                 <nav className={styles.nav}>
                     <div className={styles.navGridLeft}>
                         <ul>
-                            <Link href="/">
-                                <FontAwesomeIcon icon={faCode} className={styles.logoClass} id={styles.logoId}/>
-                            </Link>
+                            <li>
+                                <Link href="/">
+                                    <FontAwesomeIcon icon={faCode} className={styles.logoClass} id={styles.logoId}/>
+                                </Link>
+                            </li>
 
                             <a target="_blank" href="https://github.com/manny-p" rel="noreferrer">
                                 <li>
