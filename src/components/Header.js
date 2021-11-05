@@ -39,7 +39,7 @@ export default function Header() {
                     <div className={styles.navGridRight}>
                         <ul>
                             <li>
-                                <Link href="/blog">
+                                <Link href="/blog" passHref>
                                     <Button
                                         className={styles.blogButton}
                                         bg="#18c7b1"
