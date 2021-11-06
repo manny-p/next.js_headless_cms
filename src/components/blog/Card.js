@@ -7,7 +7,7 @@ import {
     Text,
     Stack,
     Avatar,
-    useColorModeValue,
+    // useColorModeValue,
 } from '@chakra-ui/react';
 
 export default function blogPostWithImage() {
@@ -20,7 +20,8 @@ export default function blogPostWithImage() {
             <Box
                 maxW={'445px'}
                 w={'full'}
-                bg={useColorModeValue('white', 'gray.900')}
+                // bg={useColorModeValue('white', 'gray.900')}
+                bg='white'
                 boxShadow={'2xl'}
                 rounded={'md'}
                 p={6}
@@ -49,7 +50,8 @@ export default function blogPostWithImage() {
                         Blog
                     </Text>
                     <Heading
-                        color={useColorModeValue('gray.700', 'white')}
+                        // color={useColorModeValue('gray.700', 'white')}
+                        color='black'
                         fontSize={'2xl'}
                         fontFamily={'body'}>
                         work in progress {writingHand} {''}...stay tuned {hourglass}
