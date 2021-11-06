@@ -3,7 +3,7 @@ import {Box, Flex, Image} from '@chakra-ui/react'
 let emoji = require('node-emoji')
 
 
-const AuthorIntro = () => {
+const Author = () => {
 
     const wave = emoji.get('wave')
     const world = emoji.get('earth_americas')
@@ -36,4 +36,4 @@ const AuthorIntro = () => {
     )
 }
 
-export default AuthorIntro;
+export default Author;

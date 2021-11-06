@@ -1,6 +1,7 @@
 import Layout from '@/components/Layout';
-import Card from '@/components/Card';
-import AuthorIntro from '@/components/blog/AuthorIntro';
+import Card from '@/components/blog/Card';
+import Author from '@/components/blog/Author';
+// import Card from '@/components/Card';
 
 
 export default function RenderBlog() {
@@ -8,7 +9,8 @@ export default function RenderBlog() {
     return (
         <>
             <Layout title="Blog" description="Manny Parra UI/UX Engineer Blog">
-                <AuthorIntro/>
+                <Author/>
+                <Card/>
                 {/*<Card/>*/}
             </Layout>
         </>
