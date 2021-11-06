@@ -16,7 +16,7 @@ const AuthorIntro = () => {
         <>
             <Flex style={style}
                   pt={'.5rem'}
-                  pl={'10rem'}
+                  pl={'5rem'}
                   bg={'rgb(38,38,38)'}
             >
                 <Image
