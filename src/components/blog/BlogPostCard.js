@@ -34,8 +34,8 @@ const blogPostCard = () => {
                         // overflow={'hidden'}
                     >
                         <Flex
-                            mt={8}
-                            mb={-4}
+                            mt={6}
+                            mb={-6}
                             mx={2}
 
                             flexDirection="column"
@@ -99,6 +99,7 @@ const blogPostCard = () => {
                                 </Stack>
                                 <Stack
                                     p={2}
+                                    pb={4}
                                     mt={6}
                                     direction={'row'}
                                     spacing={4}
