@@ -40,9 +40,3 @@ export default function Section() {
         </section>
     )
 }
-
-
-{/*<div className={styles.layer2}/>*/
-}
-{/*<div className={styles.layer3}/>*/
-}

@@ -4,10 +4,12 @@ import styles from '@/styles/Layout.module.scss'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Hero from '@/components/Hero';
+import {useEffect, useState} from 'react';
+import {Link} from '@chakra-ui/react';
 
 const Layout = ({title, description, keywords, children}) => {
 
-    const router = useRouter()
+    const {pathname} = useRouter()
 
     return (
         <>
@@ -19,8 +21,11 @@ const Layout = ({title, description, keywords, children}) => {
 
             </Head>
             <div className={styles.layoutWrapper}>
+
                 <Header/>
-                {router.pathname === '/' && <Hero/>}
+
+                {pathname === '/' && <Hero/>}
+
                 <div>
                     {children}
                 </div>

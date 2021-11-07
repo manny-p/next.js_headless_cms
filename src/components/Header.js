@@ -42,20 +42,22 @@ export default function Header() {
                         <ul>
                             <li>
                                 <Link href="/blog" passHref>
-                                    <Button
-                                        className={styles.blogButton}
-                                        bg="#18c7b1"
-                                        color="black"
-                                        size="sm"
-                                        // bgGradient="linear(to-r, #18c7b1, #5b0ead)"
-                                        _hover={{
-                                            bg: 'white',
-                                            color: '#5b0ead',
-                                        }}
-                                    >
+                                    <a>
+                                        <Button
+                                            className={styles.blogButton}
+                                            bg="#18c7b1"
+                                            color="black"
+                                            size="sm"
+                                            // bgGradient="linear(to-r, #18c7b1, #5b0ead)"
+                                            _hover={{
+                                                bg: 'white',
+                                                color: '#5b0ead',
+                                            }}
+                                        >
 
-                                        Blog
-                                    </Button>
+                                            Blog
+                                        </Button>
+                                    </a>
                                 </Link>
                             </li>
                         </ul>
