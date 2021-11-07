@@ -1,6 +1,6 @@
 import {useContext, useEffect} from 'react'
 import {AppContext} from '../context/state'
-import styles from '@/styles/Blob.module.css'
+import styles from '@/styles/Blob.module.scss'
 
 const {gsap} = require('gsap/dist/gsap')
 const {MorphSVGPlugin} = require('gsap/dist/MorphSVGPlugin')
