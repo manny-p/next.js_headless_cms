@@ -1,6 +1,7 @@
 
 .boxBorderWrap {
-  max-width: 24rem;
+  min-width: 24rem;
+  max-width: 28rem;
   border-radius: .5rem;
   position: relative;
   background: linear-gradient(to right, lightseagreen, purple);
@@ -9,7 +10,7 @@
   .box {
     background: #000;
     color: black;
-    padding: 2rem 2.5rem 2rem 2.5rem;
+    padding: 2rem 2.25rem 2rem 2.25rem;
   }
 
 
