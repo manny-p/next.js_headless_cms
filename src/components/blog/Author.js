@@ -16,8 +16,10 @@ const Author = () => {
         <>
             <Flex style={style}
                   pt={'.5rem'}
-                  pl={'5rem'}
-                  bg={'rgb(38,38,38)'}
+                  pl={'2rem'}
+                  pb={'.5rem'}
+                  bg={'#0c0c0c'}
+                  align="center"
             >
                 <Image
                     borderRadius="full"
@@ -25,10 +27,10 @@ const Author = () => {
                     src="https://avatars.githubusercontent.com/u/48877252?v=4"
                     alt="Manny Parra"
                 />
-                <Box paddingLeft=".5rem">
+                <Box paddingLeft="1rem">
                     {/*<h5 className="">Manny Parra</h5>*/}
-                    <p className="welcome-text">
-                        {wave}{' '}{world}
+                    <p>
+                        hello, world {wave} {world}
                     </p>
                 </Box>
             </Flex>

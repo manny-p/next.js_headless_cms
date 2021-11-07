@@ -1,4 +1,4 @@
-import styles from '@/styles/Section.module.css'
+import styles from '@/styles/Section.module.scss'
 import Blob from '@/components/Blob';
 import Image from 'next/image'
 import layer1 from '../svg/layer1.svg'

@@ -18,7 +18,9 @@ export default function Header() {
                         <ul>
                             <li>
                                 <Link href="/" passHref>
-                                    <FontAwesomeIcon icon={faCode} className={styles.logoClass} id={styles.logoId}/>
+                                    <a>
+                                        <FontAwesomeIcon icon={faCode} className={styles.logoClass} id={styles.logoId}/>
+                                    </a>
                                 </Link>
                             </li>
 
