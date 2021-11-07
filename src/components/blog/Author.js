@@ -18,7 +18,7 @@ const Author = () => {
                   pt={'.5rem'}
                   pl={'2rem'}
                   pb={'.5rem'}
-                  bg={'#0c0c0c'}
+                  bg={'#0e0e0e'}
                   align="center"
             >
                 <Image

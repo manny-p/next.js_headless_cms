@@ -3,7 +3,7 @@ import BlogPostCard from '@/components/blog/BlogPostCard'
 import Author from '@/components/blog/Author'
 import {getAllBlogs} from '/lib/api'
 import {Box} from '@chakra-ui/react'
-// import Card from '@/components/Card'
+
 
 export default function RenderBlog({blogs}) {
 
