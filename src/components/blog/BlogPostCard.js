@@ -20,9 +20,7 @@ const blogPostCard = ({title, subtitle}) => {
     return (
         <>
             <Box className={styles.boxBorderWrap}
-                 mt={5}
-                 mb={5}
-                 mx={5}
+                 m={5}
             >
                 <Box className={styles.box}
                      rounded={'md'}
