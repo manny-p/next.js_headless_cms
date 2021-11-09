@@ -2,29 +2,33 @@ import Layout from '@/components/Layout'
 import BlogPostCard from '@/components/blog/BlogPostCard'
 import Author from '@/components/blog/Author'
 import {getAllBlogs} from '/lib/api'
-import {Box} from '@chakra-ui/react'
+import {Box, Flex} from '@chakra-ui/react'
+import BlogPostContainer from '@/components/blog/BlogPostContainer';
 
 
 export default function RenderBlog({blogs}) {
-
     console.log(blogs)
 
     return (
         <>
             <Layout title="Blog" description="Manny Parra UI/UX Engineer Blog">
                 <Author/>
-                <BlogPostCard/>
+
+                <BlogPostContainer>
+                    {blogs.map(({slug, subtitle, title}) =>
+                        <BlogPostCard
+                            key={slug}
+                            title={title}
+                            subtitle={subtitle}
+                        />)}
+                </BlogPostContainer>
+
+
                 <Box
                     bg="white"
                     color="black"
                 >
-                    {/*<p>{JSON.stringify(blogs[0].title)}</p>*/}
-                    {/*<p>{JSON.stringify(blogs[0].subtitle)}</p>*/}
-                    {/*<p>{JSON.stringify(blogs[0].slug.current)}</p>*/}
-
-                    {/*<p>{blogs[0].title}</p>*/}
-                    {/*<p>{blogs[0].subtitle}</p>*/}
-                    {/*<p>{blogs[0].slug.current}</p>*/}
+                    {/*{JSON.stringify(blogs)}*/}
 
                 </Box>
             </Layout>

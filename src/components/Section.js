@@ -10,7 +10,7 @@ import layer4 from '../svg/layer4.svg';
 export default function Section() {
 
     return (
-        <section className={styles.sectionWrapper}>
+        <section className={styles.sectionContainer}>
             <div>
                 <Image
                     src={layer1}
