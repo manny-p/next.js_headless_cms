@@ -1,13 +1,18 @@
+.footerContainer {
+    margin-top: 1rem;
+}
+
 .footer {
     text-align: center;
     color: white;
     position: absolute;
     bottom: 0;
     width: 100vw;
+    margin-bottom: 1rem;
+
 }
 
 .footer p {
-    margin: 1vh 0;
     font-size: .75rem;
 }
 
