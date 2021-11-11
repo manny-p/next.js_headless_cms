@@ -3,9 +3,8 @@ import {useRouter} from 'next/router'
 import styles from '@/styles/Layout.module.scss'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import Hero from '@/components/Hero';
-import {useEffect, useState} from 'react';
-import {Link} from '@chakra-ui/react';
+import Hero from '@/components/Hero'
+
 
 const Layout = ({title, description, keywords, children}) => {
 

@@ -1,14 +1,12 @@
 import styles from '@/styles/Header.module.scss'
 import Link from 'next/link'
 import {Button} from '@chakra-ui/react'
-// import {useRouter} from 'next/router';
+
 
 import {faCode} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 export default function Header() {
-
-    // const router = useRouter();
 
     return (
         <>
