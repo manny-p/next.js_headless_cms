@@ -2,12 +2,11 @@ import Layout from '@/components/Layout'
 import BlogPostCard from '@/components/blog/BlogPostCard'
 import Author from '@/components/blog/Author'
 import {getAllBlogs} from '/lib/api'
-import {Box, Flex} from '@chakra-ui/react'
-import BlogPostContainer from '@/components/blog/BlogPostContainer';
+import BlogPostContainer from '@/components/blog/BlogPostContainer'
 
 
 export default function RenderBlog({blogs}) {
-    console.log(blogs)
+    // console.log(blogs)
 
     return (
         <>
@@ -20,17 +19,13 @@ export default function RenderBlog({blogs}) {
                             key={slug}
                             title={title}
                             subtitle={subtitle}
+                            link={{
+                                href: `/blog/[slug]`,
+                                as: `/blog/${slug}`
+                            }}
                         />)}
                 </BlogPostContainer>
 
-
-                <Box
-                    bg="white"
-                    color="black"
-                >
-                    {/*{JSON.stringify(blogs)}*/}
-
-                </Box>
             </Layout>
         </>
     )
@@ -41,8 +36,8 @@ export async function getStaticProps() {
     const blogs = await getAllBlogs()
     return {
         props: {
-            // blogs: blogs
             blogs
+            // blogs: blogs
         }
     }
 }

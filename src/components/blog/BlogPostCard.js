@@ -1,5 +1,5 @@
 import styles from '@/styles/BlogPostCard.module.scss'
-
+import Link from 'next/link'
 import Image from 'next/image'
 import emoji from 'node-emoji'
 import {
@@ -8,22 +8,25 @@ import {
     Heading,
     Text,
     Stack,
-    Avatar, Flex,
-    // useColorModeValue,
+    Avatar, Flex, Button,
 } from '@chakra-ui/react';
 
-const blogPostCard = ({title, subtitle}) => {
+const blogPostCard = ({title, subtitle, link}) => {
 
     const writingHand = emoji.get('writing_hand')
     const hourglass = emoji.get('hourglass_flowing_sand')
 
     return (
         <>
-            <Box className={styles.boxBorderWrap}
+            <Box className={styles.cardBorder}
                  m={5}
+                 borderRadius={'.5rem'}
             >
-                <Box className={styles.box}
+
+                <Box className={styles.card}
                      rounded={'md'}
+                     m={.5}
+                     borderRadius={'.5rem'}
                 >
                     <Flex
                         mt={6}
@@ -112,6 +115,19 @@ const blogPostCard = ({title, subtitle}) => {
                         </Box>
                     </Flex>
                 </Box>
+                <Flex justifyContent="flex-end" bg={'black'} borderRadius={'.5rem'}>
+
+                    {link &&
+                    <Link  {...link} passHref>
+                        <a>
+                            <Button m={2} bg={'white'} color={'black'}>
+                                Read More
+                            </Button>
+                            {/*Read More {link.href}*/}
+                        </a>
+                    </Link>
+                    }
+                </Flex>
             </Box>
         </>
     )
