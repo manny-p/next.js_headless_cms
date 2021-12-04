@@ -18,12 +18,12 @@ export default createSchema({
     // to the ones provided by any plugins that are installed
     types: schemaTypes.concat([
         // The following are document types which will appear
-        // in the studio.
+        // // in the studio.
         // post,
         // author,
         // category,
-        // // When added to this list, object types can be used as
-        // // { type: 't ypename' } in other document schemas
+        // When added to this list, object types can be used as
+        // { type: 'typename' } in other document schemas
         // blockContent,
         {
             name: 'blog',
