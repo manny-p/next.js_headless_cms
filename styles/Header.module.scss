@@ -4,13 +4,11 @@
   padding: 1rem 2rem;
   height: auto;
 
-
   .nav {
     padding: .5rem 1rem;
     display: grid;
     grid-template-areas:
   'left right';
-
 
     li {
       list-style: none;
@@ -69,9 +67,6 @@
 
     padding: 1rem 0 0 0;
 
-    #logoId {
-      height: .8rem
-    }
 
     .nav ul a > * {
       font-size: .8rem;
