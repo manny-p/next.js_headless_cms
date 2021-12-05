@@ -11,8 +11,7 @@ export default function RenderBlog({blogs}) {
         <Layout title="Blog" description="Manny Parra UI/UX Engineer Blog">
           <Author/>
           <Flex
-              mt={5}
-              mb={5}
+              m='1rem'
               justify="flex-end"
               flexWrap="wrap"
           >

@@ -1,9 +1,7 @@
 import Router from 'next/router'
 import NProgress from 'nprogress'
 
-let timer
-let state
-let activeRequests = 0
+let timer, state, activeRequests = 0
 const delay = 250
 
 function load() {
@@ -42,8 +40,7 @@ window.fetch = async function (...args) {
   activeRequests++
 
   try {
-    const response = await originalFetch(...args)
-    return response
+    return await originalFetch(...args)
   } catch (error) {
     return Promise.reject(error)
   } finally {
