@@ -1,8 +1,7 @@
 import {useContext, useEffect} from 'react'
 import Layout from '@/components/Layout'
 import Section from '@/components/Section'
-import {AppContext} from '../src/context/state'
-
+import {AppContext} from '/src/context/state'
 const {gsap} = require('gsap/dist/gsap')
 const {RoughEase} = require('gsap/dist/EasePack')
 const {TextPlugin} = require('gsap/dist/TextPlugin')
@@ -19,7 +18,7 @@ export default function HomePage() {
 
   useEffect(() => {
 
-    let boxTimeline = gsap.timeline()
+    const boxTimeline = gsap.timeline()
 
     boxTimeline
         .to(bgBoxRef.current, {
@@ -53,17 +52,17 @@ export default function HomePage() {
               '})'
         })
 
-    let cursorTimeline = gsap.timeline().pause()
+    const cursorTimeline = gsap.timeline().pause()
     cursorTimeline.to(cursorRef.current, {
       opacity: 0,
       ease: 'power2.inOut',
       repeat: -1,
     })
 
-    let wordsTimeline = gsap.timeline().pause()
+    const wordsTimeline = gsap.timeline().pause()
 
     words.map(word => {
-      let subTimeline = gsap.timeline({
+      const subTimeline = gsap.timeline({
         repeat: -1,
         yoyo: true,
       })
