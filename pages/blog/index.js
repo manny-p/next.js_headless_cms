@@ -7,7 +7,7 @@ import {Flex} from '@chakra-ui/react'
 export default function RenderBlog({blogs}) {
 
   return (
-      <>
+      <div>
         <Layout title="Blog" description="Manny Parra UI/UX Engineer Blog">
           <Author/>
           <Flex
@@ -27,7 +27,7 @@ export default function RenderBlog({blogs}) {
                 />)}
           </Flex>
         </Layout>
-      </>
+      </div>
   )
 }
 

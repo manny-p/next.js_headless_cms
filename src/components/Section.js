@@ -5,37 +5,38 @@ import layer1 from '../svg/layer1.svg'
 import layer2 from '../svg/layer2.svg'
 import layer3 from '../svg/layer3.svg'
 import layer4 from '../svg/layer4.svg'
+import {Box} from '@chakra-ui/react'
 
-export default function Section() {
-
+const Section = () => {
   return (
       <section className={styles.sectionContainer}>
-        <div>
+        <Box>
           <Image
               src={layer1}
               alt={'layout'}
           />
-        </div>
-        <div>
+        </Box>
+        <Box>
           <Image
               src={layer2}
               alt={'layout'}
           />
-        </div>
+        </Box>
         <Blob/>
-        <div>
+        <Box>
           <Image
               src={layer3}
               alt={'layout'}
           />
-        </div>
-        <div>
+        </Box>
+        <Box>
           <Image
               src={layer4}
               alt={'layout'}
           />
-        </div>
-        <div/>
+        </Box>
       </section>
   )
 }
+
+export default Section

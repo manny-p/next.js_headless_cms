@@ -1,31 +1,27 @@
-import {createContext, useRef} from 'react';
+import {createContext, useRef} from 'react'
 
-export const AppContext = createContext(null);
+export const AppContext = createContext(null)
 
-export function AppWrapper({children}) {
+export const AppProvider = ({children}) => {
 
-    let blobRef1 = useRef(null)
-    let blobRef2 = useRef(null)
-    let bgBoxRef = useRef(null)
-    let hiRef = useRef(null)
-    let cursorRef = useRef(null)
-    let wordsRef = useRef(null)
-    const words = [' Manny', ' a Developer', ' a Creative', ' a Veteran', ' Manny']
+  const blobRef1 = useRef(null)
+  const blobRef2 = useRef(null)
+  const bgBoxRef = useRef(null)
+  const hiRef = useRef(null)
+  const cursorRef = useRef(null)
+  const wordsRef = useRef(null)
+  const words = [' Manny', ' a Developer', ' a Creative', ' a Veteran', ' Manny']
 
-    let sharedState = {
-        blobRef1,
-        blobRef2,
-        bgBoxRef,
-        hiRef,
-        cursorRef,
-        wordsRef,
-        words,
-    }
+  const state = {
+    blobRef1,
+    blobRef2,
+    bgBoxRef,
+    hiRef,
+    cursorRef,
+    wordsRef,
+    words,
+  }
 
-    return (
-        <AppContext.Provider value={sharedState}>
-            {children}
-        </AppContext.Provider>
-    )
+  return <AppContext.Provider value={state}>{children}</AppContext.Provider>
 }
 

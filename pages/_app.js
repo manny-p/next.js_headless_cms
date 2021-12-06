@@ -1,9 +1,8 @@
-import {AppWrapper} from '../src/context/state'
-import '@/styles/globals.css'
-import '@/styles/nprogress.css'
+import {AppProvider} from '/src/context/state'
 import {ChakraProvider} from '@chakra-ui/react'
 import dynamic from 'next/dynamic'
-
+import '@/styles/globals.css'
+import '@/styles/nprogress.css'
 
 const TopProgressBar = dynamic(
     () => import('@/components/TopProgressBar'),
@@ -12,12 +11,13 @@ const TopProgressBar = dynamic(
 
 export default function MyApp({Component, pageProps}) {
   return (
-      <AppWrapper>
+      <AppProvider>
         <ChakraProvider>
-          <TopProgressBar />
+          <TopProgressBar/>
           <Component {...pageProps} />
         </ChakraProvider>
-      </AppWrapper>
+      </AppProvider>
+
   )
 }
 
